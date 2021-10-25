@@ -83,7 +83,7 @@ body {
   margin-right: 50px;
 }
 
-.connection {
+.contacts {
   display: flex;
   padding-left: 0;
   margin-left: auto;
@@ -91,8 +91,30 @@ body {
   margin-top: 0;
 }
 
-.connection .item:not(:last-child) {
+.contacts .item:not(:last-child) {
   margin-right: 50px;
+}
+
+.contacts .link {
+  display: flex;
+}
+
+.header-mail  .contacts-icon {
+  margin-right: 10px;
+
+  fill: #757575;
+
+  width: 16px;
+  height: 12px; 
+}
+
+.header-tel  .contacts-icon {
+  margin-right: 10px;
+
+  fill: #757575;
+
+  width: 10px;
+  height: 16px;
 }
 
 .brand-link {
@@ -141,6 +163,11 @@ body {
   color: var(--accent-color);
 }
 
+.header-mail:hover svg,
+.header-mail:focus svg {
+  fill: var(--accent-color);
+}
+
 .header-tel {
   font-weight: 500;
   font-size: 14px;
@@ -152,6 +179,11 @@ body {
 .header-tel:hover,
 .header-tel:focus {
   color: var(--accent-color);
+}
+
+.header-tel:hover svg,
+.header-tel:focus svg {
+  fill: var(--accent-color);
 }
 
 /* ---------------hero--------------- */
@@ -219,6 +251,18 @@ body {
   margin: -1px;
 }
 
+.features-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.features-thumb {
+  width: 100%;
+  height: 120px;
+
+  background-color: #F5F4FA;
+}
+
 .item-title {
   margin-bottom: 10px;
 
@@ -243,6 +287,10 @@ body {
 
 .features-list > li {
   width: calc((100% - 90px) / 4);
+}
+
+.features-list > li:not(:last-child) {
+  margin-right: 30px;
 }
 
 .features-list {
@@ -301,6 +349,37 @@ body {
 
 .team-list > li:not(:last-child) {
   margin-right: 30px;
+}
+
+.team-list-icons {
+  display: flex;
+  margin-top: 16px;
+  padding-left: 36px;
+  padding-right: 28px;
+  padding-bottom: 30px;
+}
+.team-list-icons > li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-link {
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.team-link:hover {
+  background-color: var(--accent-color);
+}
+.team-link:hover svg {
+  fill: #ffffff;
+}
+
+.team-list .team-icon {
+  width: 44px;
+  height: 44px;
 }
 
 .masters-name {
@@ -371,6 +450,34 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
+}
+
+.footer-title {
+
+  color: #FFFFFF;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.main-footer-div {
+  display: flex;
+}
+
+.footer-links-div {
+  margin-left: 70px;
+  padding-top: 12px;
+}
+
+.footer-links-list a {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
 }
 
 .footer-address {
