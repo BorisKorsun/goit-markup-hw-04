@@ -40,6 +40,7 @@ body {
 
 .list {
   list-style: none;
+  padding-left: 0;
 }
 
 .btn {
@@ -310,6 +311,17 @@ body {
   padding-bottom: 60px;
 }
 
+.footer-title {
+
+  color: #FFFFFF;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 /* footer-list */
 .footer-list {
   display: flex;
@@ -372,4 +384,41 @@ body {
 
 .brand-span-studio {
   color: #ffffff;
+}
+
+.main-footer-div {
+  display: flex;
+}
+
+.footer-links-div {
+  margin-left: 70px;
+  padding-top: 12px;
+}
+
+.footer-links-list {
+  display: flex;
+}
+
+.footer-links-list li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-links-list a {
+  display: inline-block;
+  margin-top: 20px;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 10%);
+}
+
+.soc-med-link:hover {
+  background-color: var(--accent-color);
+}
+
+.footer-icon {
+  width: 44px;
+  height: 44px;
+  fill: #fff;
 }
