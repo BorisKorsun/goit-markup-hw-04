@@ -65,10 +65,7 @@ body {
 
 /* ---------------header--------------- */
 
-.header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
+
 
 .header-nav {
   display: flex;
@@ -255,13 +252,9 @@ body {
   margin-bottom: 0;
 }
 
-.features-list > .item:not(:nth-child(4n)) {
-  margin-right: 30px;
-}
 
-.features-list > .item:not(:nth-child(n + 4)) {
-  margin-bottom: 30px;
-}
+
+
 
 /* ---------------about--------------- */
 
@@ -292,7 +285,6 @@ body {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
-
   color: var(--secondary-background-color);
 }
 
@@ -312,7 +304,7 @@ body {
 }
 
 .masters-name {
-  margin-bottom: 0;
+  margin-bottom: 10;
 
   font-weight: 500;
   font-size: 16px;
@@ -340,8 +332,9 @@ body {
   flex-direction: column;
 }
 
+
 .team-div-second {
-  margin-top: 30px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
 }
