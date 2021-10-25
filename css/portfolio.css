@@ -87,8 +87,8 @@ body {
   padding-bottom: 32px;
 }
 
-/* connection */
-.connection {
+/* contacts */
+.contacts {
   display: flex;
   padding-left: 0;
   margin-bottom: 0;
@@ -96,7 +96,7 @@ body {
   margin-left: auto;
 }
 
-.connection > .item:not(:last-child) {
+.contacts > .item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -106,6 +106,7 @@ body {
   align-items: center;
 }
 /* - */
+
 
 .brand-link {
   margin-right: 93px;
@@ -163,6 +164,34 @@ body {
 .header-tel:hover,
 .header-tel:focus {
   color: var(--accent-color);
+}
+
+.header-mail .contacts-icon {
+  margin-right: 10px;
+
+  fill: #757575;
+
+  width: 16px;
+  height: 12px; 
+}
+
+.header-tel  .contacts-icon {
+  margin-right: 10px;
+
+  fill: #757575;
+
+  width: 10px;
+  height: 16px;
+}
+
+.header-mail:hover svg,
+.header-mail:focus svg {
+  fill: var(--accent-color);
+}
+
+.header-tel:hover svg,
+.header-tel:focus svg {
+  fill: var(--accent-color);
 }
 
 /* ---------------portfolio--------------- */
