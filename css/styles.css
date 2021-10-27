@@ -81,7 +81,7 @@ body {
   margin-right: 50px;
 }
 
-.connection {
+.contacts {
   display: flex;
   padding-left: 0;
   margin-left: auto;
@@ -89,8 +89,33 @@ body {
   margin-top: 0;
 }
 
-.connection .item:not(:last-child) {
+.contacts .item:not(:last-child) {
   margin-right: 50px;
+}
+
+.contacts-link {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-icon.mail {
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.contacts .link:hover .contacts-icon.mail,
+.contacts .link:focus .contacts-icon.mail {
+  fill: var(--accent-color);
+}
+
+.contacts-icon.smartphone {
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.contacts .link:hover .contacts-icon.smartphone,
+.contacts .link:focus .contacts-icon.smartphone {
+  fill: var(--accent-color);
 }
 
 .brand-link {
