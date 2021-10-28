@@ -224,6 +224,11 @@ body {
   background: var(--brand-color);
 }
 
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #188ce8;
+}
+
 /* ---------------features--------------- */
 
 .features {
