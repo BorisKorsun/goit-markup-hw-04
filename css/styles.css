@@ -148,7 +148,8 @@ body {
   color: var(--primary-text-color);
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--accent-color);
 }
 
@@ -385,9 +386,14 @@ body {
 }
 
 .team-links {
+  display: flex;
   padding-left: 32px;
   padding-right: 32px;
   padding-bottom: 30px;
+}
+
+.team-links .item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .team-links .link {
@@ -547,9 +553,14 @@ body {
 }
 
 .footer-links-list {
+  display: flex;
   padding-left: 0;
   margin-top: 20px;
   margin-bottom: 0;
+}
+
+.footer-links-list .item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .footer-links-list .link {
