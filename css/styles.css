@@ -36,6 +36,7 @@ body {
 .list {
   list-style: none;
   margin-top: 0;
+  padding-left: 0;
 }
 
 .container {
@@ -405,6 +406,52 @@ body {
 .team-links .link:hover .team-icon,
 .team-links .link:focus .team-icon {
   fill: #fff;
+}
+
+/* ---------------clients--------------- */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-title {
+  margin-bottom: 50px;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.clients-list {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.clients-list .item {
+  width: calc((100% - 150px) / 5);
+  min-height: 92px;
+  margin-right: 30px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-list .link {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.clients-icon {
+  fill: #afb1b8;
+}
+
+.clients-list .link:hover .clients-icon {
+  fill: var(--accent-color);
 }
 
 /* ---------------footer--------------- */
