@@ -182,8 +182,6 @@ body {
 /* ---------------hero--------------- */
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
 
   background-color: var(--third-background-color);
@@ -193,7 +191,21 @@ body {
   text-align: inherit;
 }
 
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/hero-overlay.jpg);
+}
+
 .hero-title {
+  padding-top: 200px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
@@ -442,11 +454,12 @@ body {
 }
 
 .clients-list .item {
-  width: calc((100% - 150px) / 5);
+  width: calc(100% / 6 - 30px);
   min-height: 92px;
+}
+
+.clients-list .item:not(:last-child) {
   margin-right: 30px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
 }
 
 .clients-list .link {
@@ -455,14 +468,18 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-list .link:hover .clients-icon,
+.clients-list .link:focus .clients-icon {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .clients-icon {
   fill: #afb1b8;
-}
-
-.clients-list .link:hover .clients-icon {
-  fill: var(--accent-color);
 }
 
 /* ---------------footer--------------- */
