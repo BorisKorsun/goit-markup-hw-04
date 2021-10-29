@@ -182,18 +182,10 @@ body {
 /* ---------------hero--------------- */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
-
-  background-color: var(--third-background-color);
-}
-
-.hero > * {
-  text-align: inherit;
-}
-
-.overlay {
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -202,10 +194,15 @@ body {
       rgba(47, 48, 58, 0.4)
     ),
     url(../img/hero-overlay.jpg);
+
+  background-color: var(--third-background-color);
+}
+
+.hero > * {
+  text-align: inherit;
 }
 
 .hero-title {
-  padding-top: 200px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
@@ -368,7 +365,7 @@ body {
 }
 
 .masters-name {
-  margin-bottom: 10;
+  margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
